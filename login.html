@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login – HEMPSHOP</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo"><a href="index.html">HEMPSHOP</a></div>
+        <ul class="nav-links">
+          <li><a href="merchants.html">For Merchants</a></li>
+          <li><a href="customers.html">For Customers</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="about">
+        <div class="container">
+          <h1>Log In</h1>
+          <p>
+            Enter your email and password to access your account. Merchants and
+            customers use the same login form.
+          </p>
+        </div>
+      </section>
+      <section class="signup">
+        <div class="container">
+          <h2>Login Form</h2>
+          <form id="login-form-global" style="max-width:600px;margin:0 auto;">
+            <div style="margin-bottom:1rem;">
+              <label for="login-global-email">Email</label><br />
+              <input
+                type="email"
+                id="login-global-email"
+                required
+                placeholder="you@example.com"
+                style="width:100%; padding:0.5rem; margin-top:0.25rem;"
+              />
+            </div>
+            <div style="margin-bottom:1rem;">
+              <label for="login-global-password">Password</label><br />
+              <input
+                type="password"
+                id="login-global-password"
+                required
+                placeholder="••••••••"
+                style="width:100%; padding:0.5rem; margin-top:0.25rem;"
+              />
+            </div>
+            <button type="submit" class="primary-btn">Log In</button>
+          </form>
+          <div id="login-global-success" style="display:none; margin-top:1rem; color:#00895c; font-weight:bold; text-align:center;">
+            Login successful! You are now signed in (demo only).
+          </div>
+        </div>
+      </section>
+      <section class="signup" style="background-color:#f5f5f5;">
+        <div class="container" style="text-align:center;">
+          <p>Don't have an account?</p>
+          <a href="signup.html" class="primary-btn">Create an Account</a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="footer-contact">
+          <h3>Contact</h3>
+          <p>
+            Email:
+            <a href="mailto:support@hempmarket.africa">support@hempmarket.africa</a>
+          </p>
+          <p>
+            WhatsApp:
+            <a href="https://wa.me/27610029232">+27 61 002 9232</a>
+          </p>
+          <p>Location: Braamfontein Werf, Johannesburg</p>
+        </div>
+        <div class="footer-social">
+          <h3>Follow Us</h3>
+          <ul class="social-list">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">X/Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h3>Legal</h3>
+          <a href="terms.html">Terms of Service</a><br />
+          <a href="privacy.html">Privacy Policy</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 HEMPSHOP. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

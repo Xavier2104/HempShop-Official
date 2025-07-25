@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up – HEMPSHOP</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo"><a href="index.html">HEMPSHOP</a></div>
+        <ul class="nav-links">
+          <li><a href="merchants.html">For Merchants</a></li>
+          <li><a href="customers.html">For Customers</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="about">
+        <div class="container">
+          <h1>Create an Account</h1>
+          <p>
+            Sign up as a customer or merchant to start shopping or selling on
+            HEMPSHOP. Fill out the form below to get started.
+          </p>
+        </div>
+      </section>
+      <section class="signup">
+        <div class="container">
+          <h2>Sign Up Form</h2>
+          <form id="signup-form" style="max-width:600px;margin:0 auto;">
+            <div style="margin-bottom:1rem;">
+              <label for="signup-name">Full Name</label><br />
+              <input
+                type="text"
+                id="signup-name"
+                required
+                placeholder="Full Name"
+                style="width:100%; padding:0.5rem; margin-top:0.25rem;"
+              />
+            </div>
+            <div style="margin-bottom:1rem;">
+              <label for="signup-email">Email</label><br />
+              <input
+                type="email"
+                id="signup-email"
+                required
+                placeholder="you@example.com"
+                style="width:100%; padding:0.5rem; margin-top:0.25rem;"
+              />
+            </div>
+            <div style="margin-bottom:1rem;">
+              <label for="signup-password">Password</label><br />
+              <input
+                type="password"
+                id="signup-password"
+                required
+                placeholder="Create a password"
+                style="width:100%; padding:0.5rem; margin-top:0.25rem;"
+              />
+            </div>
+            <div style="margin-bottom:1rem;">
+              <label for="signup-confirm">Confirm Password</label><br />
+              <input
+                type="password"
+                id="signup-confirm"
+                required
+                placeholder="Confirm password"
+                style="width:100%; padding:0.5rem; margin-top:0.25rem;"
+              />
+            </div>
+            <div style="margin-bottom:1rem;">
+              <label for="signup-role">I am a...</label><br />
+              <select
+                id="signup-role"
+                required
+                style="width:100%; padding:0.5rem; margin-top:0.25rem;"
+              >
+                <option value="Customer">Customer</option>
+                <option value="Merchant">Merchant</option>
+              </select>
+            </div>
+            <button type="submit" class="primary-btn">Create Account</button>
+          </form>
+          <div id="signup-success" style="display:none; margin-top:1rem; color:#00895c; font-weight:bold; text-align:center;">
+            Thank you for signing up! Your account has been created (demo only).
+          </div>
+        </div>
+      </section>
+      <section class="signup" style="background-color:#f5f5f5;">
+        <div class="container" style="text-align:center;">
+          <p>Already have an account?</p>
+          <a href="login.html" class="primary-btn">Log In</a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="footer-contact">
+          <h3>Contact</h3>
+          <p>
+            Email:
+            <a href="mailto:support@hempmarket.africa">support@hempmarket.africa</a>
+          </p>
+          <p>
+            WhatsApp:
+            <a href="https://wa.me/27610029232">+27 61 002 9232</a>
+          </p>
+          <p>Location: Braamfontein Werf, Johannesburg</p>
+        </div>
+        <div class="footer-social">
+          <h3>Follow Us</h3>
+          <ul class="social-list">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">X/Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h3>Legal</h3>
+          <a href="terms.html">Terms of Service</a><br />
+          <a href="privacy.html">Privacy Policy</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 HEMPSHOP. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
