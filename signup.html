@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up – HEMPSHOP</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo"><a href="index.html">HEMPSHOP</a></div>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="customers.html" class="nav-link">Products</a></li>
+          <li><a href="merchants.html" class="nav-link">Merchants</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="about">
+        <div class="container">
+          <h1>Create an Account</h1>
+          <p>
+            Sign up as a customer or merchant to start shopping or selling on
+            HEMPSHOP. Fill out the form below to get started.
+          </p>
+        </div>
+      </section>
+      <section class="signup">
+        <div class="container">
+          <h2>Sign Up Form</h2>
+          <!-- Sign up form collects detailed info for customers and merchants -->
+          <form id="signup-form" style="max-width:700px;margin:0 auto;">
+            <!-- General information -->
+            <div class="form-group">
+              <label for="signup-name">Full Name</label>
+              <input type="text" id="signup-name" name="name" required placeholder="Full Name" />
+            </div>
+            <div class="form-group">
+              <label for="signup-email">Email</label>
+              <input type="email" id="signup-email" name="email" required placeholder="you@example.com" />
+            </div>
+            <div class="form-group">
+              <label for="signup-phone">Phone Number</label>
+              <input type="tel" id="signup-phone" name="phone" required placeholder="e.g. +263700000000" />
+            </div>
+            <div class="form-group">
+              <label for="signup-password">Password</label>
+              <input type="password" id="signup-password" name="password" required placeholder="Create a password" />
+            </div>
+            <div class="form-group">
+              <label for="signup-confirm">Confirm Password</label>
+              <input type="password" id="signup-confirm" name="confirmPassword" required placeholder="Confirm password" />
+            </div>
+            <div class="form-group">
+              <label for="signup-role">I am a…</label>
+              <!-- Attach inline onchange handler to ensure the correct fields display when the role changes -->
+              <select id="signup-role" name="role" required onchange="toggleSignupRole()">
+                <option value="Customer">Customer</option>
+                <option value="Merchant">Merchant</option>
+              </select>
+            </div>
+            <!-- Customer specific fields -->
+            <div id="customer-fields">
+              <div class="form-group">
+                <label for="customer-address">Street Address</label>
+                <input type="text" id="customer-address" name="address" placeholder="Street address" />
+              </div>
+              <div class="form-group">
+                <label for="customer-city">City</label>
+                <input type="text" id="customer-city" name="city" placeholder="City" />
+              </div>
+              <div class="form-group">
+                <label for="customer-country">Country</label>
+                <input type="text" id="customer-country" name="country" placeholder="Country" />
+              </div>
+          <div class="form-group">
+            <label for="customer-dob">Date of Birth</label>
+            <input type="date" id="customer-dob" name="dob" />
+          </div>
+          <div class="form-group">
+            <label for="customer-id-number">ID/Passport Number</label>
+            <input type="text" id="customer-id-number" name="idNumber" placeholder="National ID or passport number" />
+          </div>
+            </div>
+            <!-- Merchant specific fields -->
+            <div id="merchant-fields" style="display:none;">
+              <div class="form-group">
+                <label for="business-name">Business Name</label>
+                <input type="text" id="business-name" name="businessName" placeholder="Your business name" />
+              </div>
+              <div class="form-group">
+                <label for="business-phone">Business Phone</label>
+                <input type="tel" id="business-phone" name="businessPhone" placeholder="Business phone number" />
+              </div>
+              <div class="form-group">
+                <label for="business-address">Business Address</label>
+                <input type="text" id="business-address" name="businessAddress" placeholder="Business address" />
+              </div>
+              <div class="form-group">
+                <label for="license-number">License/Reg Number</label>
+                <input type="text" id="license-number" name="licenseNumber" placeholder="Regulatory license number" />
+              </div>
+              <div class="form-group">
+                <label for="tax-id">Tax/Business Registration ID</label>
+                <input type="text" id="tax-id" name="taxId" placeholder="Tax or business ID number" />
+              </div>
+              <div class="form-group">
+                <label for="business-website">Business Website</label>
+                <input type="url" id="business-website" name="businessWebsite" placeholder="https://yourbusiness.com" />
+              </div>
+              <div class="form-group">
+                <label for="business-desc">Business Description</label>
+                <textarea id="business-desc" name="businessDescription" rows="4" placeholder="Describe your business"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="business-category">Primary Product Category</label>
+                <select id="business-category" name="businessCategory">
+                  <option value="Oil">Oil</option>
+                  <option value="Edibles">Edibles</option>
+                  <option value="Supplements">Supplements</option>
+                  <option value="Clothing">Clothing</option>
+                  <option value="Bodycare">Bodycare</option>
+                  <option value="Food">Food</option>
+                </select>
+              </div>
+            </div>
+            <button type="submit" class="primary-btn">Create Account</button>
+          </form>
+          <div id="signup-success" style="display:none; margin-top:1rem; color:#00895c; font-weight:bold; text-align:center;">
+            Thank you for signing up! Your account has been created (demo only).
+          </div>
+        </div>
+      </section>
+      <section class="signup" style="background-color:#f5f5f5;">
+        <div class="container" style="text-align:center;">
+          <p>Already have an account?</p>
+          <a href="login.html" class="primary-btn">Log In</a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="footer-contact">
+          <h3>Contact</h3>
+          <p>
+            Email:
+            <a href="mailto:support@hempmarket.africa">support@hempmarket.africa</a>
+          </p>
+          <p>
+            WhatsApp:
+            <a href="https://wa.me/27610029232">+27 61 002 9232</a>
+          </p>
+          <p>Location: Braamfontein Werf, Johannesburg</p>
+        </div>
+        <div class="footer-social">
+          <h3>Follow Us</h3>
+          <ul class="social-list">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">X/Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h3>Legal</h3>
+          <a href="terms.html">Terms of Service</a><br />
+          <a href="privacy.html">Privacy Policy</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 HEMPSHOP. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

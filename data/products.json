@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Hemp Seed Oil",
+    "category": "Oil",
+    "description": "Nutrient-rich cold-pressed hemp seed oil.",
+    "price": 20,
+    "image": "assets/placeholder.png"
+  },
+  {
+    "id": 2,
+    "name": "CBD Gummies",
+    "category": "Edibles",
+    "description": "Tasty gummies infused with hemp-derived CBD.",
+    "price": 30,
+    "image": "assets/placeholder.png"
+  },
+  {
+    "id": 3,
+    "name": "Hemp Protein Powder",
+    "category": "Supplements",
+    "description": "Plant-based protein powder made from hemp seeds.",
+    "price": 25,
+    "image": "assets/placeholder.png"
+  },
+  {
+    "id": 4,
+    "name": "Hemp T-Shirt",
+    "category": "Clothing",
+    "description": "Soft and sustainable hemp fibre t-shirt.",
+    "price": 18,
+    "image": "assets/placeholder.png"
+  },
+  {
+    "id": 5,
+    "name": "Hemp Body Lotion",
+    "category": "Bodycare",
+    "description": "Moisturizing lotion enriched with hemp oil.",
+    "price": 15,
+    "image": "assets/placeholder.png"
+  },
+  {
+    "id": 6,
+    "name": "Hemp Seeds",
+    "category": "Food",
+    "description": "Organic hulled hemp seeds packed with nutrients.",
+    "price": 12,
+    "image": "assets/hemp_seeds.jpg"
+  }
+]
